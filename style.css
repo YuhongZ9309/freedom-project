@@ -87,8 +87,8 @@ img {
 }
 #introduction {
     background-color: blue;
-    
-    
+
+
 }
 
 #why {
@@ -105,4 +105,12 @@ img {
 
 #how {
     background-color: pink;
+}
+
+p {
+  font-family: 'IBM Plex Sans';
+}
+
+ h1, h2, h3, h4 {
+  font-family: 'IBM Plex Serif';
 }
