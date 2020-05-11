@@ -82,8 +82,13 @@
 section {
   height: 100vh;
 }
+img {
+  width: 50vw;
+}
 #introduction {
     background-color: blue;
+    
+    
 }
 
 #why {
