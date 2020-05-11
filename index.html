@@ -1,43 +1,63 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
     <title>Home</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-
-  </style>
   </head>
-  <body>
+  <body style="background-color: green">
 
-    <div class="container">
-      <nav class="navbar">
-          <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#service">Service</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-      <section id="home">
-        <h1>Welcome To My Site</h1>
-        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
-      </section>
-      <section id="about">
-          <h1>About</h1>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
-      </section>
-      <section id="service">
-          <h1>Service</h1>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
-      </section>
-      <section id="contact">
-          <h1>Contact</h1>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
-      </section>
+    <div id="mySidebar" class="sidebar">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+      <div id="openbar">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
     </div>
 
 
+  <div class="content">
+    <section id="introduction">
+        <h1 class="">VPN</h1>
+        <p>And Why you need one?</p>
+      </section>
+      <section id="why">
+          <h1>With a VPN...</h1>
+          <p>You can protect yourself from a lot a of </p>
+      </section>
+      <section id="which">
+          <h1>Which VPN should you get?</h1>
+          <p>There are many 3rd-parties VPN providers out there!</p>
+      </section>
+      <section id="why-not">
+          <h1>3rd-parties VPN providers might not be has secure as you think it is.</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
+      </section>
+      <section id="how">
+          <h1>How</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
+      </section>
+  </div>
+</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>

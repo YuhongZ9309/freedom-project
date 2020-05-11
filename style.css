@@ -1,92 +1,103 @@
-html {
+* {
   margin: 0;
   padding: 0;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #333;
-  color: #fff;
-  height: 100vh;
-  line-height: 1.6;
-  overflow: hidden;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  /* CSS Smooth Scroll */
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-}
-
-.lead {
-  font-size: 1.5rem;
-}
-
-.navbar {
-  position: fixed;
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
   top: 0;
-  z-index: 1;
-  display: flex;
-  width: 100%;
-  height: 60px;
-  background: rgba(0,0,0,0.7);
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
-.navbar ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: center;
-}
-
-.navbar ul li {
-  margin: 0 1rem;
-  padding: 1rem;
-}
-
-.navbar ul li a {
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #f4f4f4;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-.navbar ul li a:hover {
-  color: skyblue;
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+
+}
+
+#openbar {
   height: 100vh;
-
-  /* Scroll Snap */
-  scroll-snap-align: center;
+  background-color: white;
+  /* width: 50px; */
+  float: left;
+  position: fixed;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }
 
-section h1 {
-  font-size: 4rem;
+
+
+/* content */
+.content {
+  /* margin-left: 50px; */
+}
+section {
+  height: 100vh;
+}
+#introduction {
+    background-color: blue;
 }
 
-/* Section Images */
-section#home {
-  background: url('https://source.unsplash.com/bZZp1PmHI0E/1600x900') no-repeat center center/cover;;
+#why {
+    background-color: red;
 }
 
-section#about {
-  background: url('https://source.unsplash.com/VRxo0yY-gyM/1600x900') no-repeat center center/cover;;
+#which {
+    background-color: green;
 }
 
-section#service {
-  background: url('https://source.unsplash.com/K2tdx2mFDHc/1600x900') no-repeat center center/cover;;
+#why-not {
+    background-color: yellow;
 }
 
-section#contact {
-  background: url('https://source.unsplash.com/2aAHlfDOhJM/1600x900') no-repeat center center/cover;;
+#how {
+    background-color: pink;
 }
