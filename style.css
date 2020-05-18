@@ -85,14 +85,13 @@ section {
 img {
   width: 50vw;
 }
-#introduction {
-    background-color: blue;
 
-
+#what {
+    background-color: lightblue;
 }
 
 #why {
-    background-color: red;
+    background-color: magenta;
 }
 
 #which {
