@@ -83,7 +83,11 @@ section {
   height: 100vh;
 }
 img {
-  width: 50vw;
+  width: 25vw;
+}
+sl {
+  width: 10vw !important;
+  height: 10vh;
 }
 
 #what {
