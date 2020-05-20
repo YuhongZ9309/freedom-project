@@ -125,6 +125,14 @@ p {
 }
 
 
+.container {
+  padding-top: 100px;
+  margin: auto;
+}
+
+.row {
+  border-color: black;
+}
 
 
 
