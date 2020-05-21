@@ -92,19 +92,26 @@ sl {
 
 
 
+
 /*title*/
+/* title section */
 #title {
   background-color: #aaa;
 }
 .title {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  padding-top: 40vh;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-.title h1 {
-  font-size: 100px;
+
+.title-button {
+  margin-top: 25vh
 }
+
+
 
 /*what section*/
 #what {
@@ -119,11 +126,14 @@ sl {
 
 .what-content {
   font-size: 1.2em;
+
 }
 
 .what-img {
   width: 100%;
 }
+
+
 
 p {
   font-family: 'IBM Plex Sans';
@@ -147,6 +157,3 @@ p {
 #how {
     background-color: pink;
 }
-
-
-
