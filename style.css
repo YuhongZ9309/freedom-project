@@ -129,9 +129,19 @@ sl {
 
 
 
-
+/* why section */
 #why {
     background-color: magenta;
+}
+.why-title {
+  text-decoration: underline;
+}
+img {
+  width: 25vw;
+}
+sl {
+  width: 10vw !important;
+  height: 10vh;
 }
 
 #which {
