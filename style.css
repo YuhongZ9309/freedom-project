@@ -115,28 +115,16 @@ sl {
 
 /*what section*/
 #what {
-    background-color: lightblue;
+  background-color: lightblue;
 }
-
+.what {
+  padding-top: 100px;
+}
 .what-title {
-  font-family: 'IBM Plex Serif';
   text-decoration: underline;
-  text-align: center;
 }
-
-.what-content {
-  font-size: 1.2em;
-
-}
-
 .what-img {
-  width: 100%;
-}
-
-
-
-p {
-  font-family: 'IBM Plex Sans';
+  width: 90%;
 }
 
 
@@ -157,3 +145,9 @@ p {
 #how {
     background-color: pink;
 }
+
+
+  /*font-family: 'IBM Plex Serif';*/
+/*p {*/
+/*  font-family: 'IBM Plex Sans';*/
+/*}*/
