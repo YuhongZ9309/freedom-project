@@ -91,13 +91,24 @@ sl {
 }
 
 
+
+/*title*/
+#title {
+  background-color: #aaa;
+}
+.title {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-top: 40vh;
+}
+.title h1 {
+  font-size: 100px;
+}
+
 /*what section*/
 #what {
     background-color: lightblue;
-}
-
-.what {
-  padding: 20px;
 }
 
 .what-title {
@@ -112,27 +123,12 @@ sl {
 
 .what-img {
   width: 100%;
-  margin-top: auto;
 }
 
 p {
   font-family: 'IBM Plex Sans';
 }
 
-.title {
-  height: 35vh;
-  background-color: yellow;
-}
-
-
-.container {
-  padding-top: 100px;
-  margin: auto;
-}
-
-.row {
-  border-color: black;
-}
 
 
 
