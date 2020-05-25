@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+
+/* html {
+  scroll-behavior: smooth;
+} */
 /* The sidebar menu */
 .sidebar {
   height: 100%; /* 100% Full-height */
@@ -80,23 +84,18 @@
   /* margin-left: 50px; */
 }
 section {
-  height: 100vh;
-}
-img {
-  width: 25vw;
-}
-sl {
-  width: 10vw !important;
-  height: 10vh;
+  /* height: 100vh; */
+  width: 100%;
+  padding: 50px 0px;
 }
 
 
 
 
-/*title*/
 /* title section */
 #title {
   background-color: #aaa;
+  height: 100vh;
 }
 .title {
   position: relative;
@@ -117,16 +116,19 @@ sl {
 #what {
   background-color: lightblue;
 }
-.what {
-  padding-top: 100px;
 
-}
 .what-title {
   text-decoration: underline;
   text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
 .what-img {
   width: 90%;
+}
+.what-content {
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -137,29 +139,27 @@ sl {
 }
 .why-title {
   text-decoration: underline;
-  text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
-img {
-  width: 25vw;
+.why-content {
+  font-family: 'Open Sans', sans-serif;
+  padding: 15px;
 }
-sl {
-  width: 10vw !important;
-  height: 10vh;
+.why-Subcontent {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
-
-why-carousel {
-  text-align: center;
-}
-#myCarousel {
-  width: 60%;
+#whyCarousel {
+   width: 70%;
   display: inline-block;
 }
-#myCarousel img {
-  width: 100%;
+#whyCarousel .card-body {
+  height: 100px;
 }
 
 
-
+/* which section */
 #which {
     background-color: green;
 }
@@ -171,12 +171,8 @@ why-carousel {
   width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
-  #which  {
-    background-color: lightblue;
-  }
-}
 
+/* whynot section */
 #why-not {
     background-color: yellow;
 }
@@ -190,7 +186,7 @@ why-carousel {
 }
 
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+/* @media (min-width: 576px) and (max-width: 767.98px) {
   p {
     font-size: 28px ;
   }
@@ -210,7 +206,7 @@ why-carousel {
     font-size: 12px;
 
     }
-}
+} */
 
 
 /*.panel-group {*/
@@ -222,7 +218,3 @@ why-carousel {
 
 
 
-  /*font-family: 'IBM Plex Serif';*/
-/*p {*/
-/*  font-family: 'IBM Plex Sans';*/
-/*}*/
