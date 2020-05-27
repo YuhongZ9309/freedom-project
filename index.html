@@ -1,291 +1,299 @@
 <!doctype html>
 <html lang="en">
-   <head>
 
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-      <!-- Custom CSS -->
-      <link rel="stylesheet" href="style.css">
-
-      <!--import font-->
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
-
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 
 
 
+  <!--import font-->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
 
-      <title>Home</title>
-   </head>
+  <title>Home</title>
+</head>
 
-   <body style="background-color: purple">
+<body>
 
-      <div id="mySidebar" class="sidebar">
-         <a href="#">About</a>
-         <a href="#">Services</a>
-         <a href="#">Clients</a>
-         <a href="#">Contact</a>
-      </div>
+  <div id="mySidebar" class="sidebar">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
 
-      <div id="main">
-          <div id="openbar">
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-         </div>
 
-         <div class="content">
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+  </div>
 
-            <!--title-->
-            <section id="title">
-                <div class="title text-center">
-                  <p class="display-1">VPN</p>
-                <a href="#what"><button type="button" class="btn btn-secondary title-button">Click here to learn about VPN</button></a>
+  <div id="main">
+    <div id="openbar">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+
+    <div class="content">
+
+      <!--title-->
+      <section id="title">
+        <div class="title text-center">
+          <p class="display-1">VPN</p>
+          <a href="#what"><button type="button" class="btn btn-secondary title-button">Click here to learn about VPN</button></a>
+        </div>
+      </section>
+
+      <!--What section-->
+      <section id="what">
+        <div class="container">
+          <div class="what">
+            <div class="row">
+              <div class="col-lg-6">
+                <h1 class="what-title">What is a VPN?</h1>
+                <p class="what-content">A VPN, Virtual Private Network, is a service where you can access the internet safely by routing your connection to a server and hiding your activities. VPN are commonly use to secure connections to public
+                  WiFi, acccess restircted website, and shielding your privacy.</p>
               </div>
-            </section>
+              <div class="col-lg-6">
+                <img src="img/what-img/what-vpn.jpg" class="what-img">
+              </div>
+            </div>
+            <a href="#why"><button type="button" class="btn btn-secondary what-button">Click here to learn more about VPN</button></a>
+          </div>
+        </div>
+      </section>
 
-            <!--What section-->
-            <section id="what">
-              <div class="container">
-                <div class="what">
-                   <div class="row">
-                      <div class="col-lg-6">
-                         <h1 class="what-title">What is a VPN?</h1>
-                         <p class="what-content">A VPN, Virtual Private Network, is a service where you can access the internet safely by routing your connection to a server and hiding your activities. VPN are commonly use to secure connections to public WiFi, acccess restircted website, and shielding your privacy.</p>
+
+
+      <!--Why Section-->
+      <section id="why">
+
+        <div class="container">
+
+          <h1 class="why-title">Why do I need a VPN?</h1>
+          <h3 class="why-subtitle">You can protect yourself from a lot a of </h3>
+
+          <div class="why-content text-center">
+
+            <div class="why-carousel">
+              <div id="whyCarousel" class="carousel center slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="img/why-img/why-malware.jpg" alt="malware">
+                      <div class="card-body">
+                        <h3 class="card-title">Malware</h3>
+                        <p class="card-text">Use of worms, computer virus, trojan horse and spywares to hack into your system.</p>
                       </div>
-                      <div class="col-lg-6">
-                         <img src="img/what-img/what-vpn.jpg" class="what-img">
+                    </div>
+
+                  </div>
+                  <div class="carousel-item">
+
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="img/why-img/why-ransomware.jpg" alt="ransomeware">
+                      <div class="card-body">
+                        <h3 class="card-title">Ransomeware</h3>
+                        <p class="card-text">Attack your device and locking it and asked for a ransom.</p>
                       </div>
-                   </div>
-                         <a href="#why"><button type="button" class="btn btn-secondary what-button">Click here to learn more about VPN</button></a>
+                    </div>
+
+                  </div>
+                  <div class="carousel-item">
+
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="img/why-img/why-social.jpg" alt="social">
+                      <div class="card-body">
+                        <h4 class="card-title">Social Engineering</h4>
+                        <p class="card-text">Human interacts, such as phone calls, to trick people by giving sensitive information that can be used against them.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="carousel-item">
+
+                    <div class="card mb-2">
+                      <img class="card-img-top" src="img/why-img/why-phishing.jpg" alt="phishing">
+                      <div class="card-body">
+                        <h4 class="card-title">Phishing</h4>
+                        <p class="card-text">Emails portrayed as credible source, but is used to steal your location or credit card information.</p>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
+                <a class="carousel-control-prev" href="#whyCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#whyCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-            </section>
-
-
-
-            <!--Why Section-->
-            <section id="why">
-
-                 <div class="container">
-
-                     <h1 class="why-title">Why do I need a VPN?</h1>
-                     <h3 class="why-subtitle">You can protect yourself from a lot a of </h3>
-
-                     <div class="why-content text-center">
-
-                      <div class="why-carousel">
-                          <div id="whyCarousel" class="carousel center slide" data-ride="carousel">
-
-                            <div class="carousel-inner">
-                              <div class="item active">
-
-                                <div class="card mb-2">
-                                  <img class="card-img-top" src="img/why-img/why-malware.jpg" alt="malware">
-                                  <div class="card-body">
-                                    <h3 class="card-title">Malware</h3>
-                                    <p class="card-text">Use of worms, computer virus, trojan horse and spywares to hack into your system.</p>
-                                  </div>
-                                </div>
-
-                            </div>
-                              <div class="item">
-
-                                <div class="card mb-2">
-                                  <img class="card-img-top" src="img/why-img/why-ransomware.jpg" alt="ransomeware">
-                                  <div class="card-body">
-                                    <h3 class="card-title">Ransomeware</h3>
-                                    <p class="card-text">Attack your device and locking it and asked for a ransom.</p>
-                                  </div>
-                                </div>
-
-                              </div>
-                              <div class="item">
-
-                                <div class="card mb-2">
-                                  <img class="card-img-top" src="img/why-img/why-social.jpg" alt="social">
-                                  <div class="card-body">
-                                    <h4 class="card-title">Social Engineering</h4>
-                                    <p class="card-text">Human interacts, such as phone calls, to trick people by giving sensitive information that can be used against them.</p>
-                                  </div>
-                                </div>
-
-                              </div>
-                              <div class="item">
-
-                                <div class="card mb-2">
-                                  <img class="card-img-top" src="img/why-img/why-phishing.jpg" alt="phishing">
-                                  <div class="card-body">
-                                    <h4 class="card-title">Phishing</h4>
-                                    <p class="card-text">Emails  portrayed as credible source, but is used to steal your location or credit card information.</p>
-                                  </div>
-                                </div>
-
-                              </div>
-                            </div>
-                            <a class="left carousel-control" href="#whyCarousel" data-slide="prev">
-                              <span class="glyphicon glyphicon-chevron-left"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#whyCarousel" data-slide="next">
-                              <span class="glyphicon glyphicon-chevron-right"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </div>
-                        </div>
-
-
-                        <p class="why-Subcontent">There are others way hacker can get hold of your information by using vectors like: USB sticks/portage storage devices, unsupported browser extensions, infected websites/download links, malvertisement, online quizzes/personality tests</p>
-
-                        <a href="#which"><button type="button" class="btn btn-secondary why-button">Click here to learn about the different VPN you can use</button></a>
-
-                  </div>
-               </div>
-            </section>
-
-
-
-
-
-
-            <!--Which Section-->
-            <section id="which">
-              <p class="which-title display-4 ">Which VPN should you get?</p>
-              <div class="container">
-
-
-               <div class="row">
-                 <div class="col-md-6">
-
-
-
-
-               <p>There are many 3rd-parties VPN providers out there to chose from, some are paid subscription and some are free.</p>
-               <p> These are some of the popular VPN out there!
-             </div>
-
-             <div class="col-md-6">
-
-
-               <div class="why-carousel">
-                   <div id="which-carousel" class="carousel center slide" data-ride="carousel" data-interval="1000">
-                     <div class="carousel-inner why-carousel">
-
-                       <div class="item active">
-                         <img src="img/which-img/which-express_vpn.jpeg" alt="Express_VPN">
-                     </div>
-                     <div class="item">
-                       <img src="img/which-img/which-nord.jpg" alt="Nord_VPN">
-                     </div>
-                     <div class="item">
-                       <img src="img/which-img/which-pia.png" alt="PIA">
-                     </div>
-                     <div class="item">
-                       <img src="img/which-img/which-purevpn.jpg" alt="PureVPN">
-                     </div>
-                     <div class="item">
-                       <img src="img/which-img/which-betternet.jpg" alt="Betternet">
-                     </div>
-                   </div>
-
-                   </div>
-               </div>
-
-             </div>
-           </div>
-
-               <p>However, that does not mean they don't come with flaws!</p>
-
-               <a href="#whynot"><button type="button" class="btn btn-secondary why-button">Click here to learn more</button></a>
-
-             </div>
-            </section>
-
-
-
-            <!--Why not Section-->
-            <section id="why-not">
-               <p class="whynot-title display-4 ">3rd-parties VPN providers might not be has secure as you think it is</p>
-
-
-
-               <div class="container">
-                  <div class="row">
-                     <div class="col-sm">
-                        <img src="img/whynot-img/whynot-vpn.jpg" class="what-img">
-                     </div>
-                     <div class="col-sm">
-                        <p>Free VPN does not mean it is “Risk-Free”. Many companies use VPN to share their file securely and anonymously. Often time they take your information and sell it, that is how they make money. Other time providers are often have shady stuff going on, such as injecting JavaScript in the users’ web browsers for advertising and tracking. Overall, the VPN is not bad, it just how it was Implemented. Both using a Paid or free VPN subscription have a downside. Making your own free VPN will get you the benefits of both worlds.</p>
-                     </div>
-                  </div>
-               </div>
-
-
-
-               <!--How Section-->
-            </section>
-            <section id="how">
-               <p class="how-title display-4 ">How</p>
-
-            <div class="container">
-               <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                      How is it protective</a>
-                    </h4>
-                  </div>
-                  <div id="collapse1" class="panel-collapse collapse">
-                    <div class="panel-body">When you are connected to a VPN and your data is encrypted, others will only see the data encrypted and they will have to decrypt the data, which can be very time-consuming or impossible.</div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                      How does it work</a>
-                    </h4>
-                  </div>
-                  <div id="collapse2" class="panel-collapse collapse">
-                    <div class="panel-body">The VPN client encrypts the query or data the user enters. From there, the encrypted data goes to the user’s Internet Service Provider (ISP) and then to the VPN server. The server then connects to the public Internet, pointing the user to the query results or banking website.</div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                      How VPN overall is benefical</a>
-                    </h4>
-                  </div>
-                  <div id="collapse3" class="panel-collapse collapse">
-                    <div class="panel-body">VPN help protect what you want to hide from other that you don't want to see. There no harms or draw back from having a VPN aside from certain one that sells your information to make money, but most of them are generally not. Making your own VPN is more safe for you and your information. </div>
-                  </div>
-                </div>
-              </div>
-              <button type="button" class="btn btn-dark">Get Started</button>
             </div>
 
 
+            <p class="why-Subcontent">There are others way hacker can get hold of your information by using vectors like: USB sticks/portage storage devices, unsupported browser extensions, infected websites/download links, malvertisement, online
+              quizzes/personality tests</p>
 
-            </section>
+            <a href="#which"><button type="button" class="btn btn-secondary why-button">Click here to learn about the different VPN you can use</button></a>
+
+          </div>
+        </div>
+      </section>
 
 
 
-         </div>
-      </div>
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <script src="script.js"></script>
-   </body>
+
+
+      <!--Which Section-->
+      <section id="which">
+        <p class="which-title display-4 ">Which VPN should you get?</p>
+        <div class="container">
+
+
+          <div class="row">
+            <div class="col-md-6">
+
+
+
+
+              <p>There are many 3rd-parties VPN providers out there to chose from, some are paid subscription and some are free.</p>
+              <p> These are some of the popular VPN out there!
+            </div>
+
+            <div class="col-md-6">
+
+
+              <div class="why-carousel">
+                <div id="which-carousel" class="carousel center slide" data-ride="carousel" data-interval="1000">
+                  <div class="carousel-inner why-carousel">
+
+                    <div class="carousel-item  active">
+                      <img src="img/which-img/which-express_vpn.jpeg" alt="Express_VPN">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/which-img/which-nord.jpg" alt="Nord_VPN">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/which-img/which-pia.png" alt="PIA">
+                    </div>
+                    <div class="carousel-item  ">
+                      <img src="img/which-img/which-purevpn.jpg" alt="PureVPN">
+                    </div>
+                    <div class="carousel-item  ">
+                      <img src="img/which-img/which-betternet.jpg" alt="Betternet">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <p>However, that does not mean they don't come with flaws!</p>
+
+          <a href="#whynot"><button type="button" class="btn btn-secondary why-button">Click here to learn more</button></a>
+
+        </div>
+      </section>
+
+
+
+      <!--Why not Section-->
+      <section id="why-not">
+        <p class="whynot-title display-4 ">3rd-parties VPN providers might not be has secure as you think it is</p>
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <img src="img/whynot-img/whynot-vpn.jpg" class="what-img">
+            </div>
+            <div class="col-sm">
+              <p>Free VPN does not mean it is “Risk-Free”. Many companies use VPN to share their file securely and anonymously. Often time they take your information and sell it, that is how they make money. Other time providers are often have shady
+                stuff going on, such as injecting JavaScript in the users’ web browsers for advertising and tracking. Overall, the VPN is not bad, it just how it was Implemented. Both using a Paid or free VPN subscription have a downside. Making your
+                own free VPN will get you the benefits of both worlds.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--How Section-->
+      </section>
+      <section id="how">
+        <p class="how-title display-4 ">How</p>
+
+        <div class="container">
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                    How is it protective</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">When you are connected to a VPN and your data is encrypted, others will only see the data encrypted and they will have to decrypt the data, which can be very time-consuming or impossible.</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                    How does it work</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">The VPN client encrypts the query or data the user enters. From there, the encrypted data goes to the user’s Internet Service Provider (ISP) and then to the VPN server. The server then connects to the public
+                  Internet, pointing the user to the query results or banking website.</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                    How VPN overall is benefical</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">VPN help protect what you want to hide from other that you don't want to see. There no harms or draw back from having a VPN aside from certain one that sells your information to make money, but most of them are
+                  generally not. Making your own VPN is more safe for you and your information. </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-dark">Get Started</button>
+        </div>
+
+
+
+      </section>
+
+
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
 </html>
