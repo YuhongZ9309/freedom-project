@@ -156,6 +156,11 @@ section {
   text-decoration: underline;
   font-family: 'Oswald', sans-serif;
 }
+.whynot-title {
+  text-decoration: underline;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
 
 .why-content {
   font-family: 'Open Sans', sans-serif;
