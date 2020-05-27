@@ -234,50 +234,55 @@
       </section>
       <section id="how">
         <p class="how-title display-4 ">How</p>
-
         <div class="container">
-          <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                    How is it protective</a>
-                </h4>
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How is it protective
+                  </button>
+                </h2>
               </div>
-              <div id="collapse1" class="panel-collapse collapse">
-                <div class="panel-body">When you are connected to a VPN and your data is encrypted, others will only see the data encrypted and they will have to decrypt the data, which can be very time-consuming or impossible.</div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                    How does it work</a>
-                </h4>
-              </div>
-              <div id="collapse2" class="panel-collapse collapse">
-                <div class="panel-body">The VPN client encrypts the query or data the user enters. From there, the encrypted data goes to the user’s Internet Service Provider (ISP) and then to the VPN server. The server then connects to the public
-                  Internet, pointing the user to the query results or banking website.</div>
+          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  When you are connected to a VPN and your data is encrypted, others will only see the data encrypted and they will have to decrypt the data, which can be very time-consuming or impossible.
+                </div>
               </div>
             </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                    How VPN overall is benefical</a>
-                </h4>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How does it work
+                  </button>
+                </h2>
               </div>
-              <div id="collapse3" class="panel-collapse collapse">
-                <div class="panel-body">VPN help protect what you want to hide from other that you don't want to see. There no harms or draw back from having a VPN aside from certain one that sells your information to make money, but most of them are
-                  generally not. Making your own VPN is more safe for you and your information. </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  The VPN client encrypts the query or data the user enters. From there, the encrypted data goes to the user’s Internet Service Provider (ISP) and then to the VPN server. The server then connects to the public
+                    Internet, pointing the user to the query results or banking website.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How VPN overall is benefical
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  VPN help protect what you want to hide from other that you don't want to see. There no harms or draw back from having a VPN aside from certain one that sells your information to make money, but most of them are
+                    generally not. Making your own VPN is more safe for you and your information.
+                </div>
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-dark">Get Started</button>
         </div>
-
-
-
       </section>
 
 
