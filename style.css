@@ -128,7 +128,7 @@ section {
 
 .title-button {
   margin-top: 25vh
-  
+
 }
 
 /*what section*/
@@ -258,30 +258,9 @@ section {
   text-align: justify;
 }
 
-/* @media (min-width: 576px) and (max-width: 767.98px) {
-  p {
-    font-size: 28px ;
-  }
+
+.codesnippet {
+  padding: 10px;
+  margin-left: 20px;
+
 }
-
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  p {
-    font-size: 20px;
-  }
-}
-
-
-
-@media (min-width: 992px) and (max-width: 1199.98px){
-  p {
-    font-size: 12px;
-
-    }
-} */
-/*.panel-group {*/
-/*    padding: 15px 0px 15px 0px;*/
-/*    position: relative;*/
-/*    width: 100%;*/
-/*    margin: 0px*/
-/*}*/

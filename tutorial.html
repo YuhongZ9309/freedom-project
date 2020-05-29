@@ -40,7 +40,168 @@
 
     <div class="content">
 
-This is the tutorial page.
+      <section id="tutorialTitle" class="bg-primary">
+        <h1>VPN Tutorial</h1>
+      </section>
+
+      <section>
+
+
+        <div class="container">
+          <h1>Setting up and booting your Raspberry Pi</h1>
+
+          <ul class="list-group">
+
+              <!-- step 1 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 1</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Install <a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank">Raspbian OS</a> on your computer</h5>
+              </div>
+              <div class="list-content">
+                Recommend downloading the Lite version.
+              </div>
+            </li>
+
+            <!-- step 2 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 2</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Download <a href="https://www.balena.io/etcher/" target="_blank">balenaEtcher</a></h5>
+              </div>
+              <div class="list-content">
+                We will use this program to flash the OS onto a flash drive.
+              </div>
+            </li>
+
+            <!-- step 3 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 3</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Launcher balenaEtcher</h5>
+              </div>
+              <div class="list-content">
+                Drag the Raspbian zip file into Etcher and make sure the target is set to the flash drive. Click "Flash" and wait until it finish flashing.
+              </div>
+            </li>
+
+            <!-- step 4 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 4</span>
+              </div>
+              <div class="list-title bold">
+                <h5>After finishing flashing, the flash drive will now be called “boot”.</h5>
+              </div>
+              <div class="list-content">
+                The flash drive would automatically be ejected upon completion. Just remove the flash drive and plug it back in.
+              </div>
+            </li>
+
+            <!-- step 5 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 5</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>Create a file called "ssh" with no extension</h5>
+              </div>
+              <div class="list-content">
+                You might be prompted to reformat the drive, but DO NOT PRESS REFORMAT. Just ignore it and open the flash drive folder. Create a file called “ssh” with no extension.
+              </div>
+            </li>
+
+            <!-- step 6 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 6</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>Booting up your RaspberryPi</h5>
+              </div>
+              <div class="list-content">
+                Eject flash drive and plug it into the Raspberry Pi and connect Ethernet. Then, plug in the micro-USB to power it on. <i>Very important to plug in the flash drive before powering.</i>
+              </div>
+            </li>
+
+            <!-- step 7 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 7</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Install <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/" target="_blank">PuTTY</a></h5>
+              </div>
+              <div class="list-content">
+                Since we are doing a headless installation, we will use PuTTY to access the SSH terminal over the internet.
+              </div>
+            </li>
+
+            <!-- step 8 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 8</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>Open PuTTY</h5>
+              </div>
+              <div class="list-content">
+                Open the program, enter <code>raspberrypi</code> in Host Name and press enter.
+                <i>If that does not work, you can also find and enter the IP address of your RaspberryPi instead.</i>
+              </div>
+            </li>
+
+            <!-- sttep 9 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 9</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>Login to your RaspberryPi</h5>
+              </div>
+              <div class="list-content">
+                You will be prompted to log into your Raspberry Pi. Login in using the information below.
+                <div class="codesnippet">
+                  <code>Default Username: pi</code><br>
+                  <code>Default Password: raspberry</code>
+                </div>
+                <i>If you run to the issue “Network Error: Connection Refused” when trying to connect to your RaspberryPi, you did not create the file “ssh” correctly. (step 4)</i>
+              </div>
+            </li>
+          </ul>
+
+
+
+          </ol>
+        </div>
+      </section>
+
+      <section>
+        <h1>Installing PiVPN and configuring</h1>
+      </section>
+
+      <section>
+        <h1>Port Forwarding</h1>
+      </section>
+
+      <section>
+        <h1>Configuring VPN on your devices</h1>
+      </section>
+
+      <section>
+        <h1>How mount a USB drive to your Raspberry Pi</h1>
+
+      </section>
 
 
 
