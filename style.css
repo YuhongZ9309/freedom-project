@@ -109,13 +109,16 @@ section {
 
 /* title section */
 #title {
-  background-color: #aaa;
+  background-image: url("img/bg-img/VPN_BG.jpg");
+  background-color: #cccccc;
   height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .title {
   position: relative;
-  top: 50%;
+  top: 70%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -124,8 +127,7 @@ section {
 
 .title-button {
   margin-top: 25vh
-  /*background-image: url("bg-img/VPN_BG.jpg");*/
-  /*background-color: #cccccc;*/
+  
 }
 
 /*what section*/
