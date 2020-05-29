@@ -201,7 +201,7 @@ section {
 }
 
 #whyCarousel .card-body {
-  height: 100px;
+  height: 125px;
 }
 
 /* which section */
@@ -248,6 +248,7 @@ section {
   font-size: 20px;
   padding: 10px;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 /* @media (min-width: 576px) and (max-width: 767.98px) {
