@@ -128,7 +128,7 @@ section {
 
 /*what section*/
 #what {
-  background-color: lightblue;
+  background-color: #89ABE3;
 }
 
 .what-title {
@@ -149,7 +149,7 @@ section {
 
 /* why section */
 #why {
-  background-color: magenta;
+  background-color:  #FCF6F5;
 }
 
 
@@ -181,7 +181,7 @@ section {
 
 /* which section */
 #which {
-  background-color: green;
+  background-color: #89ABE3;
 }
 
 .which-title {
@@ -195,11 +195,17 @@ section {
 
 /* whynot section */
 #why-not {
-  background-color: yellow;
+  background-color: #FCF6F5;
 }
 
 #how {
-  background-color: pink;
+  background-color: #89ABE3;
+}
+
+#who {
+  background-color: #FCF6F5;
+  text-align: center;
+
 }
 
 .how-title {
