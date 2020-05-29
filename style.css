@@ -163,7 +163,11 @@ section {
   font-family: 'Oswald', sans-serif;
   text-align: center;
 }
-
+.who-title {
+  text-decoration: underline;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
 .why-content {
   font-family: 'Open Sans', sans-serif;
   padding: 15px;
@@ -173,6 +177,7 @@ section {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 20px;
+  text-align: center;
 }
 
 #whyCarousel {
@@ -192,6 +197,7 @@ section {
 .which-title {
   text-align: center;
   text-decoration: underline;
+  font-family: 'Oswald', sans-serif;
 }
 
 .why-carousel img {
