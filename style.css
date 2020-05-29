@@ -118,11 +118,12 @@ section {
 
 .title {
   position: relative;
-  top: 70%;
-  left: 50%;
+  top: 50%;
+  left: 20%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  color: white;
 }
 
 .title-button {
@@ -145,7 +146,7 @@ section {
   width: 90%;
 }
 .how-img {
-  width: 50%;
+  width: 80%;
 }
 
 .what-content {
@@ -170,9 +171,21 @@ section {
   font-family: 'Oswald', sans-serif;
   text-align: center;
 }
-.why-content {
+
+.who-content {
+  font-size: 20px;
+  padding: 10px;
   font-family: 'Open Sans', sans-serif;
-  padding: 15px;
+}
+.why-content {
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.whynot-content {
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .why-Subcontent {
@@ -201,6 +214,11 @@ section {
   text-decoration: underline;
   font-family: 'Oswald', sans-serif;
 }
+.which-content {
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
 
 .why-carousel img {
   width: 100%;
@@ -225,6 +243,11 @@ section {
   text-align: center;
   text-decoration: underline;
   font-family: 'Oswald', sans-serif;
+}
+.how-content {
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* @media (min-width: 576px) and (max-width: 767.98px) {
