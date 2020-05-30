@@ -165,7 +165,13 @@ section {
 #why {
   background-color:  #FCF6F5;
 }
-
+.about-us {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+.about-bg {
+  background-color: #FCF6F5;
+}
 
 .whynot-title {
   text-decoration: underline;
