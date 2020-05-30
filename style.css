@@ -3,9 +3,14 @@
   padding: 0;
 }
 
+
 /* html {
   scroll-behavior: smooth;
 } */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 /* The sidebar menu */
 .sidebar {
   height: 100%;
@@ -259,17 +264,10 @@ section {
 .how-content {
   font-size: 20px;
   padding: 10px;
-  font-family: 'Open Sans', sans-serif;
   text-align: center;
   text-align: justify;
 }
 
-
-.codesnippet {
-  padding: 10px;
-  margin-left: 20px;
-
-}
 
 .copy-right {
   font-family: 'Oswald', sans-serif;
@@ -278,3 +276,23 @@ section {
 /*.copy-bg {*/
 /*  background-color: #CACBCC;*/
 /*}*/
+
+
+/*tutorial CSS*/
+.tutorial-content {
+  background-color: #FCF6F5;
+}
+
+#tutorial-title {
+  background-color: #89ABE3;
+  text-align: center;
+}
+
+.list-title {
+  font-family: 'Oswald', sans-serif;
+}
+.codesnippet {
+  padding: 10px;
+  margin-left: 20px;
+
+}
