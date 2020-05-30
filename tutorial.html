@@ -199,7 +199,7 @@
               </div>
               <div class="list-content">
                 <code>curl -L https://install.pivpn.io | bash</code>
-                <p><i>The command can be found <a href="https://www.pivpn.io/">here</a>.</i></p>
+                <p><i>The command can be found <a href="https://www.pivpn.io/" target="_blank">here</a>.</i></p>
               </div>
             </li>
 
@@ -226,7 +226,7 @@
               </div>
               <div class="list-content">
                 <p>Since this will be a server, having a static IP address is important. Press ENTER to continue.</p>
-                <p><i>For more information on what is a static IP address, click <a href="https://kb.netgear.com/000060672/What-is-an-IP-address">here</a>.</i></p>
+                <p><i>For more information on what is a static IP address, click <a href="https://kb.netgear.com/000060672/What-is-an-IP-address" target="_blank">here</a>.</i></p>
               </div>
             </li>
 
@@ -268,7 +268,7 @@
                 <h5>Unattended Upgrades</h5>
               </div>
               <div class="list-content">
-                <p>You will be prompted about whether to enable "Unattended Upgrades"  or not. It is highly recommended to select YES. Press ENTER to continue. The RaspberryPi will then some time to processing.</p>
+                <p>You will be prompted about whether to enable "Unattended Upgrades" or not. It is highly recommended to select YES. Press ENTER to continue. The RaspberryPi will then some time to processing.</p>
               </div>
             </li>
 
@@ -282,7 +282,7 @@
               </div>
               <div class="list-content">
                 <p>You will be prompted about which protocols to uses. It is recommended to select UCP Protocols, and then press ENTER to continue.</p>
-                <p><i>For more information on the difference between UCP and TCP protocols, click <a href="https://www.diffen.com/difference/TCP_vs_UDP">here</a>.</i></p>
+                <p><i>For more information on the difference between UCP and TCP protocols, click <a href="https://www.diffen.com/difference/TCP_vs_UDP" target="_blank">here</a>.</i></p>
               </div>
             </li>
 
@@ -312,7 +312,7 @@
               </div>
               <div class="list-content">
                 <p>You will be prompted about enabling the features of OpenVPN 2.4. Select YES and press ENTER to continue.</p>
-                <p><i>For more information on what is OpenVPN, click <a href="https://www.allthingssecured.com/vpn/faq/what-is-openvpn/">here</a>.</i></p>
+                <p><i>For more information on what is OpenVPN, click <a href="https://www.allthingssecured.com/vpn/faq/what-is-openvpn/" target="_blank">here</a>.</i></p>
               </div>
             </li>
 
@@ -327,7 +327,8 @@
               </div>
               <div class="list-content">
                 <p>ou will be prompted to choose the level of encryption that you want. 256-bit encryption is recommended, so press ENTER to continue.</p>
-                <p><i>Higher encryption means your connection between your device and the VPN would be more secure. However, it will require the VPN server more performance to decrypt the information. Sometimes, higher encryption can lead to lower speed.</i></p>
+                <p><i>Higher encryption means your connection between your device and the VPN would be more secure. However, it will require the VPN server more performance to decrypt the information. Sometimes, higher encryption can lead to lower
+                    speed.</i></p>
               </div>
             </li>
 
@@ -341,8 +342,9 @@
                 <h5>Public IP address or Public DNS</h5>
               </div>
               <div class="list-content">
-                <p>You will be prompted about selecting Public IP address or public DNS. Selecting Public IP address requires you to have a static WAN IP address. However, selecting Public DNS requires you to set up a Public DNS entry. Select your choice and press ENTER to continue.</p>
-                <p><i>For more information on IP address, click <a href="https://whatismyipaddress.com/dynamic-static">here</a>.</i></p>
+                <p>You will be prompted about selecting Public IP address or public DNS. Selecting Public IP address requires you to have a static WAN IP address. However, selecting Public DNS requires you to set up a Public DNS entry. Select your
+                  choice and press ENTER to continue.</p>
+                <p><i>For more information on IP address, click <a href="https://whatismyipaddress.com/dynamic-static" target="_blank">here</a>.</i></p>
               </div>
             </li>
 
@@ -357,42 +359,225 @@
               </div>
               <div class="list-content">
                 <p>You will be prompted about which DNS server you want to select for your PiVPN. Rrecommended to select Google for DNS due to their speed and security. Then, press ENTER to continue.</p>
-                <p><i>For more information on what is DNS, click <a href="https://www.allthingssecured.com/vpn/faq/what-is-openvpn/">here</a>.</i></p>
+                <p><i>For more information on what is DNS, click <a href="https://www.allthingssecured.com/vpn/faq/what-is-openvpn/" target="_blank">here</a>.</i></p>
               </div>
             </li>
 
             <!-- sttep 13 -->
             <li class="list-group-item">
               <div class="step-badge">
-                <span class="badge badge-secondary" style="font-size: 16px;">Step 13</span>
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 13</span </div>
+
+                <div class="list-title bold">
+                  <h5>Installation Complete</h5>
+                </div>
+                <div class="list-content">
+                  <p>Congratulations! You have successfully installed PiVPN server and almost ready to use. You will be prompted to reboot the system. Select YES and press ENTER twice to confirm reboot.</p>
+                  <p>PuTTY might display a message about “unexpectedly closed network connection”. Just click OK and close PuTTY.</p>
+                </div>
+            </li>
+      </section>
+
+      <section>
+
+        <div class="container">
+          <h1>Port Forwarding</h1>
+
+          <p class="disabled">This process can vary from people to people since they might have different router. If these instructions does not apply to your router, please search up on how to port forward on your specific router model.</p>
+
+          <ul class="list-group">
+
+            <!-- step 1 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 1</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Open CMD on Windows</h5>
+              </div>
+              <div class="list-content">
+                <p>On windows, press WINDOW KEY + R to open run. Then type “cmd” and then press enter.</p>
+
+              </div>
+            </li>
+
+            <!-- step 2 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 2</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Type <code>ipconfig</code></h5>
+              </div>
+              <div class="list-content">
+                Once command prompt is open, type in <code>ipconfig</code>. You will be able to see all of your network information and look for default gateway. Write down IP address since we will be using this.
+              </div>
+            </li>
+
+            <!-- step 3 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 3</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Accessing WiFi Router's Setting</h5>
+              </div>
+              <div class="list-content">
+                <p>Open your browser and enter the default gateway in the URL box.</p>
+                <p>You will be prompted to enter your router's admin username and password.</p>
+                <p><i>This information can often be found on the sticker on your router.</i></p>
+              </div>
+            </li>
+
+            <!-- step 4 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 4</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Access Port Forward tab</h5>
+              </div>
+              <div class="list-content">
+                <p>Find the tab for Port Forwarding. Typically this will be under Advanced and then Port Forwarding or Virtual Server. For some router, it will be under the NAT/QoS tab.</p>
+              </div>
+            </li>
+
+            <!-- step 5 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 5</span>
               </div>
 
               <div class="list-title bold">
-                <h5>Installation Complete</h5>
+                <h5>Configuring Port Forward</h5>
               </div>
               <div class="list-content">
-                <p>Congratulations! You have successfully installed PiVPN server and almost ready to use. You will be prompted to reboot the system. Select YES and press ENTER twice to confirm reboot.</p>
-                <p>PuTTY might display a message about “unexpectedly closed network connection”. Just click OK and close PuTTY.</p>
+                <p>Enter the IP address for you Raspberry Pi in IP address section. For Protocol, choose the protocols that you choose while installation.</p>
+                <p>Enter the PiVPN port under Port. <i>The default port is 1194, but you may have changed it during installation.</i></p>
+                <p>As for application name, it could be anything. However, it is recommended to name it something obvious, like “PiVPN”.</p>
               </div>
             </li>
-    </section>
 
-    <section>
-      <h1>Port Forwarding</h1>
-    </section>
+            <!-- step 6 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 6</span>
+              </div>
 
-    <section>
-      <h1>Configuring VPN on your devices</h1>
-    </section>
+              <div class="list-title bold">
+                <h5>Apply Port Forwarding Settings</h5>
+              </div>
+              <div class="list-content">
+                <p>Once done entering the information, make sure to save the settings and click apply. Also make sure it is also enable.</p>
+              </div>
+            </li>
 
-    <section>
-      <h1>How mount a USB drive to your Raspberry Pi</h1>
+            <!-- step 7 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 7</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Checking Port</h5>
+              </div>
+              <div class="list-content">
+                <p>You can check if you open the port correctly by going to this <a href="https://www.yougetsignal.com/tools/open-ports/" target="_blank">site</a>, and change the port to the port of the PiVPN (default: 1194).</p>
+                <p><i>NOTE: Your PiVPN must be up and running.</i></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    </section>
+      <section>
+        <div class="container">
+          <h1>Configuring VPN on your devices</h1>
+
+          <ul class="list-group">
+
+            <!-- step 1 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 1</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Add a client</h5>
+              </div>
+              <div class="list-content">
+                <p>Open up PuTTY and access the RaspberryPi’s ssh terminal. Type in <code>pivpn -a</code> to add a client.</p>
+                <p>You will need to add a username and a password.</p>
+                <p>Once you done that, a certificate file will be generated. This is the file which you need to let your device connect to the VPN. It will also say where the file is located.</p>
+
+              </div>
+            </li>
+
+            <!-- step 2 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 2</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Accessing the certificate file</h5>
+              </div>
+              <div class="list-content">
+                To go to the folder where it holds, the certificate file, enter <code>cd [nameOfTheFolder]</code>. Then, you can check by using <code>ls</code> to list all the files in the folder. Here, you should be able to see the certificate that
+                you created.</p>
+              </div>
+            </li>
+
+            <!-- step 3 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 3</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Sending files using SimpleHTTPServer</h5>
+              </div>
+              <div class="list-content">
+                <p>When you are in the folder, you can enter <code>python -m SimpleHTTPServer 8080</code> into the terminal. This will create a simple server that you can access the file on any devices on your network.</p>
+              </div>
+            </li>
+
+            <!-- step 4 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 4</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Access the SimpleHTTPServer</h5>
+              </div>
+              <div class="list-content">
+                <p>To access the server, you will need to go your brower and enter <code>XXX.XXX.X.XXX:8080</code>. You will need to replace the Xs with the IP address of your RaspberryPi.</p>
+              </div>
+            </li>
+
+            <!-- step 5 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 5</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>Connecting to PiVPN</h5>
+              </div>
+              <div class="list-content">
+                <h6>Connecting on Mobile Devices</h6>
+                <p>If you are trying to connect using your mobile device, you will to first install OpenVPN Connect.(<a href="https://apps.apple.com/us/app/openvpn-connect/id590379981" target="_blank">App Store</a> or <a
+                    href="https://play.google.com/store/apps/details?id=net.openvpn.openvpn&hl=en_US" target="_blank">Google Play</a>) Once, you will have the app installed, open the certificate file using the app. This will get you setup, and then
+                  you will enter the password to connect.</p>
+                <h6>Connecting on Windows</h6>
+                <p>If you are trying to connect using your windows device, you will to first install <a href="https://openvpn.net/client-connect-vpn-for-windows/" target="_blank">OpenVPN Connect for Windows</a>. Once, you will have the software
+                  installed, download the certificate file and open it using the software. This will get you setup, and then you will enter the password to connect.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+      </section>
 
 
-
-  </div>
+    </div>
   </div>
 
   <!-- Optional JavaScript -->
