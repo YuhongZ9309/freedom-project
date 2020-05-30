@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
 
-  <title>Home</title>
+  <title>Tutorial</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
   <div id="mySidebar" class="sidebar">
     <a href="index.html">Home</a>
     <a href="cybersecurity.html">Cybersecurity</a>
-    <a href="#"  style="color: white;">Tutorial</a>
+    <a href="#" style="color: white;">Tutorial</a>
     <a href="https://github.com/YuhongZ9309/freedom-project">About Us</a>
 
 
@@ -52,7 +52,7 @@
 
           <ul class="list-group">
 
-              <!-- step 1 -->
+            <!-- step 1 -->
             <li class="list-group-item">
               <div class="step-badge">
                 <span class="badge badge-secondary" style="font-size: 16px;">Step 1</span>
@@ -179,33 +179,220 @@
               </div>
             </li>
           </ul>
-
-
-
           </ol>
         </div>
       </section>
 
       <section>
-        <h1>Installing PiVPN and configuring</h1>
-      </section>
+        <div class="container">
+          <h1>Installing PiVPN and configuring</h1>
 
-      <section>
-        <h1>Port Forwarding</h1>
-      </section>
+          <ul class="list-group">
 
-      <section>
-        <h1>Configuring VPN on your devices</h1>
-      </section>
+            <!-- step 1 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 1</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Copy and paste the installation command into the terminal.</h5>
+              </div>
+              <div class="list-content">
+                <code>curl -L https://install.pivpn.io | bash</code>
+                <p><i>The command can be found <a href="https://www.pivpn.io/">here</a>.</i></p>
+              </div>
+            </li>
 
-      <section>
-        <h1>How mount a USB drive to your Raspberry Pi</h1>
+            <!-- step 2 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 2</span>
+              </div>
+              <div class="list-title bold">
+                <h5>PiVPN Automated Installer</h5>
+              </div>
+              <div class="list-content">
+                Once finishing installing, it would said PiVPN would transform your Pi to a VPN server. Press ENTER to continue.
+              </div>
+            </li>
 
-      </section>
+            <!-- step 3 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 3</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Assigning Static IP Address</h5>
+              </div>
+              <div class="list-content">
+                <p>Since this will be a server, having a static IP address is important. Press ENTER to continue.</p>
+                <p><i>For more information on what is a static IP address, click <a href="https://kb.netgear.com/000060672/What-is-an-IP-address">here</a>.</i></p>
+              </div>
+            </li>
+
+            <!-- step 4 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 4</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Internet Configuration</h5>
+              </div>
+              <div class="list-content">
+                <p>It will now prompt about your internet configuration to confirm. Here, you will configure the static IP address of your RaspberryPi. When you finish, press ENTER to continue.</p>
+                <p><i>Different router have different ways of setting a static IP address, so please google and search how to set a static IP address for your specific router model.</i></p>
+              </div>
+            </li>
+
+            <!-- step 5 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 5</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>PiVPN User</h5>
+              </div>
+              <div class="list-content">
+                <p>You will be prompted about which user to hold the VPN configuration. Press ENTER to continue.</p>
+                <p>Since we are doing this installation on Raspberry Pi, there will be only one user to select. Press ENTER to select and continue.</p>
+              </div>
+            </li>
+
+            <!-- step 6 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 6</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Unattended Upgrades</h5>
+              </div>
+              <div class="list-content">
+                <p>You will be prompted about whether to enable "Unattended Upgrades"  or not. It is highly recommended to select YES. Press ENTER to continue. The RaspberryPi will then some time to processing.</p>
+              </div>
+            </li>
+
+            <!-- step 7 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 7</span>
+              </div>
+              <div class="list-title bold">
+                <h5>Protocol</h5>
+              </div>
+              <div class="list-content">
+                <p>You will be prompted about which protocols to uses. It is recommended to select UCP Protocols, and then press ENTER to continue.</p>
+                <p><i>For more information on the difference between UCP and TCP protocols, click <a href="https://www.diffen.com/difference/TCP_vs_UDP">here</a>.</i></p>
+              </div>
+            </li>
+
+            <!-- step 8 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 8</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>OpenVPN Port</h5>
+              </div>
+              <div class="list-content">
+                <p>You will be prompted about which port the the VPN is going to use. The default port is 1194. Pressed ENTER to continue.</p>
+                <p>Then, it will ask you to confirm the port. Press ENTER to confirm and continue.</p>
+              </div>
+            </li>
+
+            <!-- sttep 9 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 9</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>OpenVPN Installation Mode</h5>
+              </div>
+              <div class="list-content">
+                <p>You will be prompted about enabling the features of OpenVPN 2.4. Select YES and press ENTER to continue.</p>
+                <p><i>For more information on what is OpenVPN, click <a href="https://www.allthingssecured.com/vpn/faq/what-is-openvpn/">here</a>.</i></p>
+              </div>
+            </li>
+
+            <!-- sttep 10 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 10</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>Encryption Level</h5>
+              </div>
+              <div class="list-content">
+                <p>ou will be prompted to choose the level of encryption that you want. 256-bit encryption is recommended, so press ENTER to continue.</p>
+                <p><i>Higher encryption means your connection between your device and the VPN would be more secure. However, it will require the VPN server more performance to decrypt the information. Sometimes, higher encryption can lead to lower speed.</i></p>
+              </div>
+            </li>
+
+            <!-- sttep 11 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 11</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>Public IP address or Public DNS</h5>
+              </div>
+              <div class="list-content">
+                <p>You will be prompted about selecting Public IP address or public DNS. Selecting Public IP address requires you to have a static WAN IP address. However, selecting Public DNS requires you to set up a Public DNS entry. Select your choice and press ENTER to continue.</p>
+                <p><i>For more information on IP address, click <a href="https://whatismyipaddress.com/dynamic-static">here</a>.</i></p>
+              </div>
+            </li>
+
+            <!-- sttep 12 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 12</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>Configuring DNS Server</h5>
+              </div>
+              <div class="list-content">
+                <p>You will be prompted about which DNS server you want to select for your PiVPN. Rrecommended to select Google for DNS due to their speed and security. Then, press ENTER to continue.</p>
+                <p><i>For more information on what is DNS, click <a href="https://www.allthingssecured.com/vpn/faq/what-is-openvpn/">here</a>.</i></p>
+              </div>
+            </li>
+
+            <!-- sttep 13 -->
+            <li class="list-group-item">
+              <div class="step-badge">
+                <span class="badge badge-secondary" style="font-size: 16px;">Step 13</span>
+              </div>
+
+              <div class="list-title bold">
+                <h5>Installation Complete</h5>
+              </div>
+              <div class="list-content">
+                <p>Congratulations! You have successfully installed PiVPN server and almost ready to use. You will be prompted to reboot the system. Select YES and press ENTER twice to confirm reboot.</p>
+                <p>PuTTY might display a message about “unexpectedly closed network connection”. Just click OK and close PuTTY.</p>
+              </div>
+            </li>
+    </section>
+
+    <section>
+      <h1>Port Forwarding</h1>
+    </section>
+
+    <section>
+      <h1>Configuring VPN on your devices</h1>
+    </section>
+
+    <section>
+      <h1>How mount a USB drive to your Raspberry Pi</h1>
+
+    </section>
 
 
 
-    </div>
+  </div>
   </div>
 
   <!-- Optional JavaScript -->
